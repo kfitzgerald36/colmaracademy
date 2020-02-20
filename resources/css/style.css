@@ -1,7 +1,6 @@
 body {
     width: 100%;
-    margin: 0;
-    background-color: grey;   
+    margin: 0;  
     font-size: 16px;
     color: black;
 }
@@ -14,12 +13,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    border-bottom: black 3px solid;
 }
 
 .links ul li {
     margin-right: 24px;
     display: inline;
     font-size: 1.5rem;
+    font-family: helvetica;
 }
 
 li a {
@@ -30,6 +31,7 @@ li a {
     font-weight: 800px;
     font-size: 1.5rem;
     font-family: 'Oswald';
+    letter-spacing: -2px;
     
 }
 .academy {
@@ -37,5 +39,52 @@ li a {
     font-size: 1.5rem;
     font-family: 'Oswald';
     color: lightgrey;
-    outline-color: black;
+    font-weight: inherit;
+    letter-spacing: -2px;
+ 
+}
+.logo {
+    margin-left: 24px;
+
+}
+.logo img {
+    height: 28px;
+}
+.banner {
+   background-color: #f3f3f3;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.banner-img {
+    width: 60%;
+    margin: 32px 24px;
+
+}
+.banner-heading {
+    padding-left: 24px;
+}
+.banner-heading h1 { 
+    font-family: Anton;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 3em;
+    
+}
+.banner-heading p {
+    letter-spacing: 1px;
+    font-family: 'oswald';
+    font-size: 2em;
+
+}
+
+.banner-heading .start-here {
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 80%;
+    font-size: 1em;
+    border-style: none;
+
 }
