@@ -2,35 +2,157 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet"> 
         <title>Colmar Academy</title>
         <link rel="stylesheet" href="resources/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <p>
 <!-- header: logo and nav -->
 <header>
     <div>
         <img class="logo" src="/resources/css/images/ic-logo.svg"/>
         <span class='colmar'>COLMAR</span> &nbsp; <span class='academy'>Academy</span>
     </div>
-    <span class='links'>
+    <nav class='desktop-nav'>
         <ul>
             <li><a href="#">On Campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">For Companies</a></li>
-            <li><a href="#">Sign in</a></li>
-            
+            <li><a href="#">Sign in</a></li>    
         </ul>
-    </span>
+    </nav>
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#"><img src="/resources/css/images/ic-logo.svg"/></a></li>
+            <li><img src="resources/css/images/ic-on-campus.svg"/></li>
+            <li><img src="/resources/css/images/ic-online.svg"/></li>
+            <li><img src="/resources/css/images/ic-login.svg"/></li>
+        </ul>
+    </div>
 </header>
+<!--banner-->
 <section class="banner">
     <img class="banner-img" src="/resources/css/images/banner.jpg" alt="students learning"/>
 <div class="banner-heading">
     <h1>Learn Something New. Everyday.</h1>
-    <p>Classes start September 1st. <br> Enroll <b>now.</br></p>
-    <button class="start-here">Start here</button>
-</div>
-
+    <p>Classes start September 1st.</p> 
+    <p>Enroll now.</p>
+    <button type="button" class="start-here"> Start here </button>
 </div>
 </section>
-    </body>
-</html>
+<!--main section 1-->
+<section class="container">
+    <div class="left">
+        <img class="reading" src="resources/css/images/information-main.jpg" alt="man reading"/>
+    <h1>It Doesn't Hurt to Keep Practicing</h1>
+    <p>Lorem ipsum dolor sit amet, ex qui iudico audiam. Ei nobis accusam forensibus quo. Eum populo semper cotidieque no, eum ludus habemus patrioque ne. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div class="learn-more">
+        <div class="preview"> 
+            <img src="/resources/css/images/information-orientation.jpg" alt="students walking"/>
+        <div class="preview-info">
+            <h3>orientation date</h3>
+            <h6>Tuesday 10/11 & Wednesday 10/12 </h6>
+            <a href="#">learn more</a>
+        </div>
+        </div>
+        <div class="learn-more">
+            <div class="preview"> 
+                <img src="/resources/css/images/information-campus.jpg" alt="students walking"/>
+            <div class="preview-info">
+                <h3>our campus</h3>
+                <h6>find which campus is closest to you </h6>
+                <a href="#">learn more</a>
+            </div>
+            </div>
+        <div class="learn-more">
+            <div class="preview"> 
+                 <img src="/resources/css/images/information-guest-lecture.jpg" alt="students walking"/>
+             <div class="preview-info">
+                 <h3>our guest lecture</h3>
+                <h6>join a keynote with oliver sack about music in medical treatment</h6>
+                <a href="#">learn more</a>
+            </div>
+             </div>
+   
+</div>
+</section>
+<!--Classes-->
+<section class="classes">
+<div class="start-learning">
+    <h1>Start Learning</h1>
+<div class="courses">
+    <div class="course">
+        <img class="course-img" src="/resources/css/images/course-software.jpg">
+        <h3 class="course-name">Software Engineering</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>Web development, Mobile Development, IOT, APIs </p>
+     </div>
+     <div class="course">
+        <img class="course-img" src="/resources/css/images/course-computer-art.jpg">
+        <h3 class="course-name">Computer Art</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>Imaging & Design, Web Design, Motion and Graphics, Computer Animation </p>
+     </div>
+     <div class="course">
+        <img class="course-img" src="/resources/css/images/course-design.jpg">
+        <h3 class="course-name">Design</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>User experience design, user research, visual design </p>
+     </div>
+     <div class="course">
+        <img class="course-img" src="/resources/css/images/course-data.jpg">
+        <h3 class="course-name">Data</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>Data science, Big Data, SQL, Data Visualization </p>
+     </div>
+     <div class="course">
+        <img class="course-img" src="/resources/css/images/course-business.jpg">
+        <h3 class="course-name">Business</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>Product development, business development, startup </p>
+     </div>
+     <div class="course">
+        <img class="course-img" src="/resources/css/images/course-marketing.jpg">
+        <h3 class="course-name">Marketing</h3>
+        <p class="course-info"> <span style="text-transform: uppercase">Courses</span> <br>Analytics, Content Marketing, Mobile Marketing </p>
+     </div>
+</div>
+</section>
+
+<!--Thesis Exhibit -->
+
+<section class="thesis">
+<div id="thesis-exhibit">
+    <h1>Thesis Exhibit</h1>
+</div>
+<section class="container">
+    <div class="left">
+        <video class="media" src="/resources/css/videos/thesis.mp4"
+        preload="auto" controls autoplay></video>
+    <h1>Reimagine Urban</h1>
+    <p>Lorem ipsum dolor sit amet, ex qui iudico audiam. Ei nobis accusam forensibus quo. Eum populo semper cotidieque no, eum ludus habemus patrioque ne. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <div class="thesis-navbar">
+        <div class="thesis-nav-item">  
+        <img src="/resources/css/images/thesis-fisma.jpg" alt="thesis fisma"/>
+            <div class="info">
+            <a href="#"><h3>Fisma: Design and Prototype</h3></a>
+            <h6>Designer showcase of new prototype product </h6>
+            </div>       
+        </div>
+        <div class="thesis-nav-item">
+            <img src="/resources/css/images/thesis-now-and-then.jpg" alt="thesis now and then"/>
+                <div class="info">
+                <a href="#"><h3>Now and Then</h3></a>
+                <h6>Research study about New York</h6>
+                </div>
+            </div>
+
+    </div>
+
+</section>
+
+<!--Footer-->
+<footer>
+<p>&#9400; 2016 Colmar Academy. All rights reserved.<p>
+<p class="terms-privacy">Terms Privacy</p>       
+</footer>
+

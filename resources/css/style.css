@@ -1,11 +1,26 @@
+/* Universal styles */
 body {
     width: 100%;
     margin: 0;  
     font-size: 16px;
     color: black;
+    background-color: white;
+    
 }
 
+a {
+    font-size: 12px;
+    font-family: arial;
+}
 
+p {
+    font-family: arial;
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-size: 48px;;
+}
 /* Header and Nav */
 header {
     height: 64px;
@@ -16,7 +31,7 @@ header {
     border-bottom: black 3px solid;
 }
 
-.links ul li {
+.desktop-nav ul li {
     margin-right: 24px;
     display: inline;
     font-size: 1.5rem;
@@ -62,29 +77,433 @@ li a {
 
 }
 .banner-heading {
-    padding-left: 24px;
+    margin-left: 24px;
+    align-items: center; 
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
-.banner-heading h1 { 
-    font-family: Anton;
-    letter-spacing: 1px;
+.banner-heading H1 { 
+    font-family: Anton;  
     font-weight: lighter;
     font-size: 3em;
     
 }
 .banner-heading p {
-    letter-spacing: 1px;
     font-family: 'oswald';
     font-size: 2em;
+    margin: 0;
 
 }
 
 .banner-heading .start-here {
     background-color: black;
     color: white;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 80%;
+    margin-top: 48px;
+    margin-bottom: 28px;
+    padding: 18px;
+    width: 70%;
     font-size: 1em;
     border-style: none;
+    font-size: 28px;
 
 }
+.banner-heading .start-here:hover {
+    transition-property: color;
+    transition-duration: .5s;
+    background-color: white;
+    color: black;
+    transition-timing-function: ease-out;
+    border: black 1px solid;
+    
+}
+
+.mobile-nav {
+    display: none;
+}
+@media screen and (max-width:680px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .banner-img {
+        width: 100%;
+        margin: 0px;
+    }
+  
+    .banner-heading p {
+        display: none;
+    }
+    .banner-heading {
+        text-align: center;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .colmar, .academy {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+        height: 64px; 
+        
+    }
+    
+    .mobile-nav ul {
+        
+        align-items: center; 
+        display: flex;
+        flex-direction:row;
+        margin: 10px;
+        padding: 0;
+        justify-content: space-between;   
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .mobile-nav ul img {
+        width: 100%; 
+        padding: 10px;
+    
+    }
+
+}
+/* Main Section 1 General */
+.container {
+    background-color:white;
+    width:100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}
+
+/* Left side of Main section 1 */
+.container .left {
+    flex-direction: column;
+    width: 60%;
+    padding-right: 24px;
+    margin-right: 24px;
+
+}
+.box {
+    display: flex;
+    flex-direction: row;
+}
+.reading {
+    width: 100%;
+    margin-left: 24px;
+    margin-top: 32px;
+    border: black solid 5px;
+}
+
+.left h1,p {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+    font-family: 'Oswald';
+}
+
+/* right side of main section 1 */
+.learn-more {
+    padding-top: 32px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+
+        
+}
+
+.learn-more .preview {
+    display: flex;
+    border: 5px black solid;
+    background-color: white;
+    width: 75%;
+    
+
+}
+.preview:hover {
+    background-color: lightgray;
+    
+}
+.image-container {
+    padding: 0px;
+    margin: 0;
+    width: auto;
+    
+      
+}
+
+.image-container img {
+    height: auto;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.preview-info {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+      
+}
+.preview-info h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+}
+.preview-info h6 {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
+    font-family: arial;
+}
+
+@media screen and (max-width:680px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reading {
+        display: none;
+    }
+    
+    .left {
+        display: none;
+    }
+
+    .learn-more {
+        display: flex;
+        flex-direction: column;
+    }   
+
+   
+}
+
+/* classes */ 
+
+.start-learning {
+    text-align: center;
+    font-family: "Oswald";
+    padding-top: 32px;
+    margin-bottom: 32px;
+    background-color: lightgray;
+    border-top: 1px black solid;
+}
+.course {
+    background-color:white;
+    margin: 32px;
+    width: 25%;
+    
+}
+
+.course:hover{
+    box-shadow: 0 0 10px black;
+   
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+    background-color:lightgray;
+    flex-wrap: wrap;  
+    justify-content: center;     
+}
+
+.course-img {
+    height: auto; 
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.course-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.course-info {
+    font-size: 16px;
+    text-align: left;
+    flex-wrap: wrap;
+    
+}
+
+/* Classes Mobile */
+@media screen and (max-width:680px) {
+    .classes {
+        display:flex;
+    }
+
+    .course-img {
+        display: none;
+        
+    }
+    .course-info {
+        display: none;
+    }
+
+    .course {
+        width: 100%;
+        margin: 8px;
+        background-color: darkgray;
+        border: 1px black solid;
+        
+    }
+
+    .course-name {
+        padding-bottom: 24px;
+        padding-top: 16px;
+        text-align: left;
+        padding-left: 16px;   
+    }
+}
+
+    
+
+
+/* Thesis Exhibit */
+.thesis-title-mobile {
+    display: none;
+}
+
+#thesis-exhibit {
+    text-align: center;
+    font-family: "Oswald";
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.media {
+    max-width: 100%;
+    height: auto;
+    margin: 24px;
+}
+
+.thesis-navbar {
+    width: 40%;
+    margin: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+  
+   
+}
+
+.thesis-navbar :hover {
+    background-color: lightgray;
+}
+.thesis-nav-item {
+    display: flex;
+    border: 5px black solid;
+    align-items: center;
+    margin: 0px;
+    
+
+}
+
+
+.thesis-navbar .info {
+    width: 65%;
+    text-align: left;
+    padding-left: 16px;
+    height: auto;
+}
+.thesis-navbar .info h3 {
+    font-family: 'oswald';
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.thesis-navbar .info h6 {
+    font-family: arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+.info a :hover {
+   font-size: 33px;
+}
+
+/* thesis mobile */
+@media screen and (max-width:680px) {
+    .thesis-navbar {
+        display: none;
+    }
+
+    .container .left {
+        min-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .container .left p  {
+        display: none;
+    }
+
+    .container .left h1 {
+        display: none;
+    }
+    
+}
+
+
+
+
+/* Footer */
+footer {
+    height: 64px;
+    width: 100%;
+    border-top: 3px solid black;
+    display: inline-flex;
+    font-size: 1em;
+    justify-content: space-between
+}
+
+footer p {
+  margin-top: 16px;
+  position: relative;
+  float: right;
+  
+}
+    
+.terms-privacy {
+    text-align: right;
+}
+
